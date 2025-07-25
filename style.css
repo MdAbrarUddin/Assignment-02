@@ -51,6 +51,7 @@
 .nav-2 {
     color: rgba(62, 62, 62, 0.7);
 }
+
 .nav-3 {
     color: black;
 }
@@ -126,7 +127,8 @@
     font-size: 20px;
     color: #111111;
 }
-.cards button{
+
+.cards button {
     width: 252px;
     height: 40px;
     font-weight: 600;
@@ -137,23 +139,76 @@
     margin-bottom: 25px;
 }
 
+/* style for Flower and Plants Lover Section */
+
+.plants-lover {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 200px;
+    gap: 5%;
+}
+
+.img-box {
+    position: relative;
+}
+
+.main-img {
+    width: calc((80% -5%)/2);
+}
+
+.overlay-img {
+    position: absolute;
+    width: 40%;
+    top: -100px;
+    right: -70px;
+}
+.text-box{
+    margin: 30px auto;
+}
+.text-box h3{
+     font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.text-box ul li{
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* Responsive */
 @media screen and (max-width: 576px) {
-    .banner, .plants{
+
+    .banner,
+    .plants {
         flex-direction: column;
     }
-     .nav-1, .nav-2{
+
+    .nav-1,
+    .nav-2 {
         display: none;
     }
-    .navbar{
+
+    .navbar {
         justify-content: space-between;
-        
+
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
     }
-    .cards{
-        grid-template-columns: repeat(2,1fr);
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+    .plants-lover{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .overlay-img{
+        display: none;
+    }
+
 }
