@@ -183,13 +183,7 @@
 
 /* Style for Join Section */
 
-/* .join-section{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 110px;
-    border: 2px solid lightcoral;
-} */
+
 .latest-deal {
     width: 100%;
     margin: 0 auto;
@@ -224,43 +218,136 @@
 }
 
 .deal-box {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column; 
-  padding: 25px;
-  color: white;
-  align-items: center;
-  border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    color: white;
+    align-items: center;
+    border-radius: 15px;
 }
-.deal-left h3{
+
+.deal-left h3 {
     font-weight: bold;
     font-size: 20px;
 }
-.deal-left a{
+
+.deal-left a {
     font-weight: 600;
-    font-size:16px ;
+    font-size: 16px;
 }
-.deal-box a{
+
+.deal-box a {
     color: white;
     margin-bottom: 25px;
 }
-.deal-right{
-   justify-content: center;
+
+.deal-right {
+    justify-content: center;
 }
-.deal-right h3{
+
+.deal-right h3 {
     font-weight: bold;
     font-size: 40px;
 }
-.deal-right a{
+
+.deal-right a {
     font-weight: 600;
-    font-size:26px ;
+    font-size: 26px;
     margin-top: -25px;
 }
 
+.colorful-bunch {
+    background-image: url(./assets/news-letter-bg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.colorful-bunch h2 {
+    padding-top: 140px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.colorful-bunch form input {
+    padding: 12px;
+    width: 45%;
+    font-size: 15px;
+}
+
+.colorful-bunch button {
+    width: 15%;
+    padding: 12px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 150px;
+}
+
+/* style for Footer Section */
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+
+.footer-left {
+    width: 33%;
+}
+
+.footer-left {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.footer-links {
+    width: 33%;
+    flex: 2 1 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-links>div {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+.twit {
+    margin-top: 8px;
+}
+
+
 
 /* Responsive */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     .banner,
     .plants {
@@ -293,7 +380,12 @@
     .overlay-img {
         display: none;
     }
-   .grid-img{
-    grid-template-columns: 1fr;
-   }
+
+    .grid-img {
+        grid-template-columns: 1fr;
+    }
+     .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
