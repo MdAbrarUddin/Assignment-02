@@ -163,20 +163,101 @@
     top: -100px;
     right: -70px;
 }
-.text-box{
+
+.text-box {
     margin: 30px auto;
 }
-.text-box h3{
-     font-weight: 700;
+
+.text-box h3 {
+    font-weight: 700;
     font-size: 45px;
     margin-bottom: 30px;
 }
-.text-box ul li{
+
+.text-box ul li {
     font-weight: 500;
     font-size: 19px;
     margin-bottom: 15px;
     color: rgba(0, 0, 0, 0.5);
 }
+
+/* Style for Join Section */
+
+/* .join-section{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 110px;
+    border: 2px solid lightcoral;
+} */
+.latest-deal {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.latest-deal h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.latest-deal p {
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0 22%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.grid-img {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 2fr;
+    gap: 23px;
+}
+
+.deal-left {
+    display: grid;
+    gap: 19px;
+}
+
+.deal-box {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; 
+  padding: 25px;
+  color: white;
+  align-items: center;
+  border-radius: 15px;
+}
+.deal-left h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+.deal-left a{
+    font-weight: 600;
+    font-size:16px ;
+}
+.deal-box a{
+    color: white;
+    margin-bottom: 25px;
+}
+.deal-right{
+   justify-content: center;
+}
+.deal-right h3{
+    font-weight: bold;
+    font-size: 40px;
+}
+.deal-right a{
+    font-weight: 600;
+    font-size:26px ;
+    margin-top: -25px;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 576px) {
@@ -203,12 +284,16 @@
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    .plants-lover{
+
+    .plants-lover {
         flex-direction: column;
         justify-content: center;
     }
-    .overlay-img{
+
+    .overlay-img {
         display: none;
     }
-
+   .grid-img{
+    grid-template-columns: 1fr;
+   }
 }
